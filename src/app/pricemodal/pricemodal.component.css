@@ -1,0 +1,13 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar {
+   background: rgb(0, 0, 0);
+   color: #fff
+}
+.backcard{
+background-color: rgb(230, 236, 236);
+margin: 10px;
+
+}

@@ -1,0 +1,42 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar {
+   background: rgb(0, 0, 0);
+   color: #fff
+}
+table {
+  width: 80%;
+margin: 0 auto;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  
+}
+.topsearch{
+width: 80%;
+margin: 0 auto;
+margin-left: 10em;
+color: aliceblue;
+}
+
+td, th {
+  width: 25%;
+}
+.dataveiw{
+width: 10% !important;
+margin-left: 0%;
+    margin-block-start: 0em !important;
+}
+.customIconSize {
+    font-size: 80px;
+    height: 80px ;
+    width: 80px ;
+color: rgb(21, 225, 225);
+}
+.btncolor{
+background-color: #12aede;
+color: #fff;
+}

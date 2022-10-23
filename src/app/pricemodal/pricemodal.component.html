@@ -1,0 +1,79 @@
+<mat-toolbar color="dark">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Item Price</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>notifications</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example account_circle">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+
+  </mat-toolbar>
+
+
+<h1 mat-dialog-title>{{data.name}} </h1>
+
+<mat-divider></mat-divider>
+<app-spiner *ngIf="showspiner"></app-spiner>
+<br>
+<div *ngIf="!showspiner">
+
+<div class="card" class="backcard">
+{{priceGrpArr1[0].name }}<span *ngIf="!priceGrpArr1[0].name ">{{visibility}}</span>
+  <div class="card-body">
+   <mat-card>
+<div class="container">
+<div class="row">
+<div class="col-md-4"><span *ngIf="priceGrpArr1[0].pricetype">{{priceGrpArr1[0].pricetype||visibility}}</span><span *ngIf="!priceGrpArr1[0].pricetype ">{{visibility}}</span>
+<br>
+<span> {{priceGrpArr1[0].price |currency:'AUD'}}</span><span *ngIf="priceGrpArr1[0].price=='undefined' ">{{visibility}}</span>
+
+</div>
+<div class="col-md-4">
+{{priceGrpArr1[2].pricetype ||visibility }}<br><span *ngIf="priceGrpArr1[2].pricetype=='undefined'">visibility</span>
+{{priceGrpArr1[2].price |currency:'AUD' ||visibility}}<span *ngIf="priceGrpArr1[2].price== 'undefined'">{{visibility}}</span>
+</div>
+<div class="col-md-4">
+{{priceGrpArr1[1].pricetype ||visibility }}<br><span *ngIf="priceGrpArr1[1].pricetype =='undefined'">{{visibility}}</span>
+{{priceGrpArr1[1].price |currency:'AUD' ||visibility}}<span *ngIf="priceGrpArr1[1].price =='undefined'">{{visibility}}</span>
+</div>
+</div>
+</div>
+</mat-card>
+  </div>
+</div>
+
+<!--second card-->
+<br>
+
+<div class="card" class="backcard">
+{{priceGrpArr2[0].name ||visibility}}
+  <div class="card-body">
+   <mat-card>
+<div class="container">
+<div class="row">
+<div class="col-md-4">
+{{priceGrpArr2[0].pricetype}}<br>
+{{priceGrpArr2[0].price |currency:'AUD'}}
+</div>
+<div class="col-md-4">
+{{priceGrpArr2[2].pricetype||visibility}}<br>
+{{priceGrpArr2[2].price |currency:'AUD'}}
+</div>
+<div class="col-md-4">
+{{priceGrpArr2[1].pricetype||visibility}}<br>
+{{priceGrpArr2[1].price |currency:'AUD'}}
+</div>
+</div>
+</div>
+</mat-card>
+  </div>
+</div>
+
+
+
+</div>
+
